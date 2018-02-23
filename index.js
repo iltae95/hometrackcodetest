@@ -21,7 +21,7 @@ const server = http.createServer((req,res) => {
 			reqJSON = JSON.parse(decodeURIComponent(url.parse(req.url).pathname.split('/')[1]));
 		} catch(err) {
 			console.error({"Error":"Could not decode request: JSON parsing failed"});
-			res.end();
+			res.end({"Error":"Could not decode request: JSON parsing failed"});
 			return ;
 		}
 
@@ -55,7 +55,7 @@ const server = http.createServer((req,res) => {
 			res.end(JSON.stringify(result));
 		} catch(err) {
 			console.error({"Error":"Could not decode request: Incorrect fields"});
-			res.end();
+			res.end({"Error":"Could not decode request: Incorrect fields"});
 			return ;
 		}
 
