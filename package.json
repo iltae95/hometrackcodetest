@@ -1,0 +1,28 @@
+{
+  "name": "hometrackcodetest",
+  "version": "1.0.0",
+  "description": "View the request payload json sample provided; from the list of property data in the request payload, return a property record array for items having workflow completed (workflow: completed) for the type 'htv'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iltae95/hometrackcodetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iltae95/hometrackcodetest/issues"
+  },
+  "homepage": "https://github.com/iltae95/hometrackcodetest#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
