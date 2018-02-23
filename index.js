@@ -21,7 +21,7 @@ const server = http.createServer((req,res) => {
 			reqJSON = JSON.parse(decodeURIComponent(url.parse(req.url).pathname.split('/')[1]));
 		} catch(err) {
 			console.error({"Error":"Could not decode request: JSON parsing failed"});
-			res.end(JSON.stringify({"Error":"Could not decode request: JSON parsing failed"});
+			res.end(JSON.stringify({"Error":"Could not decode request: JSON parsing failed"}));
 			return ;
 		}
 
