@@ -62,6 +62,6 @@ const server = http.createServer((req,res) => {
 	}
 });
 
-server.listen(process.env.PORT || port, hostname, () => {
+server.listen(process.env.PORT || port, () => {
 	console.log('server started');
 });
